@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fruit Brust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="px-20 bg-white">
+    <main>
+        <header class="pt-8 pb-5">
+            <div class="navbar bg-[#F85559] rounded-full px-14">
+                <div class="navbar-start text-white ">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-4xl">Home</li>
+                            <li class="text-4xl">About us</li>
+                            <li class="text-4xl">Contact</li>
+                            <li class="text-4xl">Flowers</li>
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu  space-x-4 menu-horizontal px-1">
+                            <li>Home</li>
+                            <li>About us</li>
+                            <li>Shop</li>
+                            <li>All Fruits</li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="lg:visible invisible" src="/images/logo.png" alt="">
+                <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+                <div class="navbar-end invisible lg:visible">
+                    <div class="">
+                        <div class="input-group rounded-full px-5 items-center bg-white">
+                            <input type="text" placeholder="Search…" class="input bg-white input-bordered" />
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/249a585ff3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
