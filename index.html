@@ -1,245 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Fruit Brust</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Brust</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
     </script>
-</head>
+  </head>
 
-<body class="px-20 bg-white h-screen">
+  <body class="px-20 bg-white h-screen">
     <main>
-        <header class="pt-8 pb-5">
-            <div class="navbar bg-[#F85559] rounded-full px-14">
-                <div class="navbar-start text-white ">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li class="text-4xl">Home</li>
-                            <li class="text-4xl">About us</li>
-                            <li class="text-4xl">Contact</li>
-                            <li class="text-4xl">Flowers</li>
-                        </ul>
-                    </div>
-                    <div class="navbar-center hidden lg:flex ">
-                        <ul class="menu  space-x-4 menu-horizontal px-1">
-                            <li>Home</li>
-                            <li>About us</li>
-                            <li>Shop</li>
-                            <li>All Fruits</li>
-                            <li>All Fruits</li>
-                        </ul>
-                    </div>
-                </div>
-                <img class="lg:visible invisible" src="/images/logo.png" alt="">
-                <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst Human </a>
-                <div class="navbar-end invisible lg:visible">
-                    <div class="">
-                        <div class="input-group rounded-full px-5 items-center bg-white">
-                            <input type="text" placeholder="Search…" class="input bg-white input-bordered" />
-
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-
-                        </div>
-                    </div>
-                </div>
+      <header class="pt-8 pb-5">
+        <div class="navbar bg-[#F85559] rounded-full px-14">
+          <div class="navbar-start text-white">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li class="text-4xl">Home</li>
+                <li class="text-4xl">About us</li>
+                <li class="text-4xl">Contact</li>
+                <li class="text-4xl">Flowers</li>
+              </ul>
             </div>
-        </header>
-        <main>
-            <section class="pt-10">
-                <div class="flex justify-between gap-8 text-black ">
-                    <div class="space-y-2 py-5 text-center border rounded-lg w-full">
-                        <img class="mx-auto" src="images/fruit6.png" alt="">
-                        <h1 class="font-bold">12.90$ - 18.85$</h1>
-                        <div class="divider mx-20"></div>
-                        <p>Apples</p>
-                        <h3 class="text-red-500">
-                            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                class="fa-regular fa-star"></i>
-                        </h3>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu space-x-4 menu-horizontal px-1">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+                <li>All Fruits</li>
+              </ul>
+            </div>
+          </div>
+          <img class="lg:visible invisible" src="/images/logo.png" alt="" />
+          <a class="btn btn-ghost normal-case text-xl text-white"
+            >Fruit Burst Human
+          </a>
+          <div class="navbar-end invisible lg:visible">
+            <div class="">
+              <div class="input-group rounded-full px-5 items-center bg-white">
+                <input
+                  type="text"
+                  placeholder="Search…"
+                  class="input bg-white input-bordered"
+                />
 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="pt-10">
+          <div class="flex justify-between gap-8 text-black">
+            <div class="space-y-2 py-5 text-center border rounded-lg w-full">
+              <img class="mx-auto" src="images/fruit6.png" alt="" />
+              <h1 class="font-bold">12.90$ - 18.85$</h1>
+              <div class="divider mx-20"></div>
+              <p>Apples</p>
+              <h3 class="text-red-500">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </h3>
 
-                        <!-- Open the modal using ID.showModal() method -->
-                        <button class="text-red-500" onclick="my_modal_1.showModal()">Details</button>
-                        <dialog id="my_modal_1" class=" modal">
-                            <form method="dialog" class="text-center items-center bg-white modal-box">
-                                <img class="mx-auto h-80" src="images/fruit6.png" alt="">
-                                <h1>Apples</h1>
-                                <p class="py-4">Professional employees are there for you to pick the most amazing and
-                                    fresh
-                                    fruits.</p>
-                                <h3 class="text-red-500">
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                        class="fa-regular fa-star"></i>
-                                </h3>
-                                <div class="modal-action  justify-around mx-24">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="text-red-500 btn btn-outline bg-white">Close</button>
-                                    <button class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg">Buy
-                                        Now</button>
-                                </div>
-                            </form>
-                        </dialog>
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-red-500" onclick="my_modal_1.showModal()">
+                Details
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <form
+                  method="dialog"
+                  class="text-center items-center bg-white modal-box"
+                >
+                  <img class="mx-auto h-80" src="images/fruit6.png" alt="" />
+                  <h1>Apples</h1>
+                  <p class="py-4">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <h3 class="text-red-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
+                  </h3>
+                  <div class="modal-action justify-around mx-24">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-red-500 btn btn-outline bg-white">
+                      Close
+                    </button>
+                    <button
+                      class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+            <div class="space-y-2 py-5 text-center border rounded-lg w-full">
+              <img class="mx-auto" src="images/fruit7.png" alt="" />
+              <h1 class="font-bold">12.90$ - 18.85$</h1>
+              <div class="divider mx-20"></div>
+              <p>Orange</p>
+              <h3 class="text-red-500">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </h3>
 
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-red-500" onclick="my_modal_2.showModal()">
+                Details
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <form
+                  method="dialog"
+                  class="text-center items-center bg-white modal-box"
+                >
+                  <img class="mx-auto h-80" src="images/fruit7.png" alt="" />
+                  <h1>Orange</h1>
+                  <p class="py-4">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <h3 class="text-red-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
+                  </h3>
+                  <div class="modal-action justify-around mx-24">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-red-500 btn btn-outline bg-white">
+                      Close
+                    </button>
+                    <button
+                      class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+            <div class="space-y-2 py-5 text-center border rounded-lg w-full">
+              <img class="mx-auto" src="images/fruit8.png" alt="" />
+              <h1 class="font-bold">12.90$ - 18.85$</h1>
+              <div class="divider mx-20"></div>
+              <p>Red Dragon</p>
+              <h3 class="text-red-500">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </h3>
 
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-red-500" onclick="my_modal_3.showModal()">
+                Details
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <form
+                  method="dialog"
+                  class="text-center items-center bg-white modal-box"
+                >
+                  <img class="mx-auto h-80" src="images/fruit8.png" alt="" />
+                  <h1>Red Dragon</h1>
+                  <p class="py-4">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <h3 class="text-red-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
+                  </h3>
+                  <div class="modal-action justify-around mx-24">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-red-500 btn btn-outline bg-white">
+                      Close
+                    </button>
+                    <button
+                      class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+            <div class="space-y-2 py-5 text-center border rounded-lg w-full">
+              <img class="mx-auto" src="images/fruit9.png" alt="" />
+              <h1 class="font-bold">12.90$ - 18.85$</h1>
+              <div class="divider mx-20"></div>
+              <p>Banana</p>
+              <h3 class="text-red-500">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </h3>
 
+              <!-- Open the modal using ID.showModal() method -->
+              <button class="text-red-500" onclick="my_modal_4.showModal()">
+                Details
+              </button>
+              <dialog id="my_modal_4" class="modal">
+                <form
+                  method="dialog"
+                  class="text-center items-center bg-white modal-box"
+                >
+                  <img class="mx-auto h-80" src="images/fruit9.png" alt="" />
+                  <h1>Banana</h1>
+                  <p class="py-4">
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                  <h3 class="text-red-500">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i
+                    ><i class="fa-regular fa-star"></i>
+                  </h3>
+                  <div class="modal-action justify-around mx-24">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="text-red-500 btn btn-outline bg-white">
+                      Close
+                    </button>
+                    <button
+                      class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </form>
+              </dialog>
+            </div>
+          </div>
 
-                    </div>
-                    <div class="space-y-2 py-5 text-center border rounded-lg w-full">
-                        <img class="mx-auto" src="images/fruit7.png" alt="">
-                        <h1 class="font-bold">12.90$ - 18.85$</h1>
-                        <div class="divider mx-20"></div>
-                        <p>Orange</p>
-                        <h3 class="text-red-500">
-                            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                class="fa-regular fa-star"></i>
-                        </h3>
+          <div class="text-center pt-10">
+            <button
+              class="bg-[#F85559] text-white font-bold px-7 py-3 rounded-lg"
+            >
+              Show All
+            </button>
+          </div>
+        </section>
+      </main>
 
+      <!-- nafis -->
+      <section class="pt-32">
+        <div class="bg-[url('/images/team.png')] text-white p-20">
+          <h1 class="text-6xl">Meet the team section</h1>
+          <p>
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical Latin literature from 45 BC, making it over
+            2000 years old.
+          </p>
 
-                        <!-- Open the modal using ID.showModal() method -->
-                        <button class="text-red-500" onclick="my_modal_2.showModal()">Details</button>
-                        <dialog id="my_modal_2" class=" modal">
-                            <form method="dialog" class="text-center items-center bg-white modal-box">
-                                <img class="mx-auto h-80" src="images/fruit7.png" alt="">
-                                <h1>Orange</h1>
-                                <p class="py-4">Professional employees are there for you to pick the most amazing and
-                                    fresh
-                                    fruits.</p>
-                                <h3 class="text-red-500">
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                        class="fa-regular fa-star"></i>
-                                </h3>
-                                <div class="modal-action  justify-around mx-24">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="text-red-500 btn btn-outline bg-white">Close</button>
-                                    <button class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg">Buy
-                                        Now</button>
-                                </div>
-                            </form>
-                        </dialog>
+          <div class="flex">
+            <div>
+              <img src="images/member1.png" alt="" />
+              <h1>Awlad Hossain</h1>
+              <p>Fruits Expert</p>
+              <div>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-regular fa-twitter"></i>
+                <i class="fa-regular fa-linkedin"></i>
+              </div>
+            </div>
 
+            <div>
+              <img src="images/member2.png" alt="" />
+              <h1>Safia Chowdhury</h1>
+              <p>Fruits Expert</p>
+              <div>
+                <i class="fa-regular fa-facebook"></i>
+                <i class="fa-regular fa-twitter"></i>
+                <i class="fa-regular fa-linkedin"></i>
+              </div>
+            </div>
 
+            <div>
+              <img src="images/member3.png" alt="" />
+              <h1>Rokib Hossain</h1>
+              <p>Fruits Expert</p>
+              <div>
+                <i class="fa-regular fa-facebook"></i>
+                <i class="fa-regular fa-twitter"></i>
+                <i class="fa-regular fa-linkedin"></i>
+              </div>
+            </div>
 
-
-                    </div>
-                    <div class="space-y-2 py-5 text-center border rounded-lg w-full">
-                        <img class="mx-auto" src="images/fruit8.png" alt="">
-                        <h1 class="font-bold">12.90$ - 18.85$</h1>
-                        <div class="divider mx-20"></div>
-                        <p>Red Dragon</p>
-                        <h3 class="text-red-500">
-                            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                class="fa-regular fa-star"></i>
-                        </h3>
-
-                        <!-- Open the modal using ID.showModal() method -->
-                        <button class="text-red-500" onclick="my_modal_3.showModal()">Details</button>
-                        <dialog id="my_modal_3" class=" modal">
-                            <form method="dialog" class="text-center items-center bg-white modal-box">
-                                <img class="mx-auto h-80" src="images/fruit8.png" alt="">
-                                <h1>Red Dragon</h1>
-                                <p class="py-4">Professional employees are there for you to pick the most amazing and
-                                    fresh
-                                    fruits.</p>
-                                <h3 class="text-red-500">
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                        class="fa-regular fa-star"></i>
-                                </h3>
-                                <div class="modal-action  justify-around mx-24">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="text-red-500 btn btn-outline bg-white">Close</button>
-                                    <button class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg">Buy
-                                        Now</button>
-                                </div>
-                            </form>
-                        </dialog>
-
-
-
-
-
-                    </div>
-                    <div class="space-y-2 py-5 text-center border rounded-lg w-full">
-                        <img class="mx-auto" src="images/fruit9.png" alt="">
-                        <h1 class="font-bold">12.90$ - 18.85$</h1>
-                        <div class="divider mx-20"></div>
-                        <p>Banana</p>
-                        <h3 class="text-red-500">
-                            <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                class="fa-regular fa-star"></i>
-                        </h3>
-
-                        <!-- Open the modal using ID.showModal() method -->
-                        <button class="text-red-500" onclick="my_modal_4.showModal()">Details</button>
-                        <dialog id="my_modal_4" class=" modal">
-                            <form method="dialog" class="text-center items-center bg-white modal-box">
-                                <img class="mx-auto h-80" src="images/fruit9.png" alt="">
-                                <h1>Banana</h1>
-                                <p class="py-4">Professional employees are there for you to pick the most amazing and
-                                    fresh
-                                    fruits.</p>
-                                <h3 class="text-red-500">
-                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star-half-stroke"></i><i
-                                        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                                        class="fa-regular fa-star"></i>
-                                </h3>
-                                <div class="modal-action  justify-around mx-24">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="text-red-500 btn btn-outline bg-white">Close</button>
-                                    <button class="bg-[#F85559] text-white font-bold px-4 py-3 rounded-lg">Buy
-                                        Now</button>
-                                </div>
-                            </form>
-                        </dialog>
-
-
-
-
-
-                    </div>
-                </div>
-
-                <div class="text-center pt-10">
-                    <button class="bg-[#F85559] text-white font-bold px-7 py-3 rounded-lg">Show All</button>
-                </div>
-            </section>
-        </main>
-
+            <div>
+              <img src="images/member4.png" alt="" />
+              <h1>Chaity</h1>
+              <p>Fruits Expert</p>
+              <div>
+                <i class="fa-regular fa-facebook"></i>
+                <i class="fa-regular fa-twitter"></i>
+                <i class="fa-regular fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/249a585ff3.js" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://kit.fontawesome.com/249a585ff3.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
